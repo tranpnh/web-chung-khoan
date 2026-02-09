@@ -1,49 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background: #f4f6f8;
-    color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fb;
+  color: #333;
+  line-height: 1.6;
 }
 
-header {
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    color: white;
-    padding: 20px;
-    text-align: center;
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
 }
 
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  text-align: center;
 }
 
-main {
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
 }
 
-h2 {
-    color: #1e3c72;
+.subtitle {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.features {
+  list-style: none;
+  margin-bottom: 35px;
+}
+
+.features li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* BUTTON */
+.btn-primary {
+  display: inline-block;
+  background: #ffcc00;
+  color: #000;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #ffb700;
+}
+
+/* SERVICES */
+.services {
+  background: #fff;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
 }
 
 .card {
-    background: #f9fafb;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-left: 5px solid #2a5298;
-    border-radius: 6px;
+  background: #f9fafc;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
+.card h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.card ul {
+  margin-bottom: 20px;
+}
+
+.card ul li {
+  margin-bottom: 8px;
+}
+
+.price {
+  font-weight: bold;
+  color: #1e3c72;
+}
+
+/* FOOTER */
 footer {
-    text-align: center;
-    padding: 15px;
-    background: #1e3c72;
-    color: white;
-    margin-top: 40px;
+  background: #1e3c72;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
 }
