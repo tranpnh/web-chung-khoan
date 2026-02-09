@@ -2,113 +2,112 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f5f7fb;
+  background: #f4f6f8;
   color: #333;
   line-height: 1.6;
 }
 
-/* CONTAINER */
 .container {
+  width: 90%;
   max-width: 1100px;
   margin: auto;
-  padding: 60px 20px;
 }
 
 /* HERO */
 .hero {
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  background: linear-gradient(180deg, #0f2d3d, #214f63);
   color: #fff;
   text-align: center;
+  padding: 80px 20px;
 }
 
 .hero h1 {
-  font-size: 40px;
-  margin-bottom: 15px;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
-.subtitle {
+.hero .subtitle {
   font-size: 18px;
-  opacity: 0.9;
-  margin-bottom: 30px;
-}
-
-.features {
-  list-style: none;
-  margin-bottom: 35px;
-}
-
-.features li {
-  margin: 10px 0;
-  font-size: 16px;
-}
-
-/* BUTTON */
-.btn-primary {
-  display: inline-block;
-  background: #ffcc00;
-  color: #000;
-  padding: 14px 30px;
-  border-radius: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.btn-primary:hover {
-  background: #ffb700;
+  opacity: 0.95;
 }
 
 /* SERVICES */
 .services {
-  background: #fff;
-}
-
-.services h2 {
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 50px;
+  padding: 70px 0;
 }
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
 }
 
 .card {
-  background: #f9fafc;
-  border-radius: 15px;
+  background: #fff;
+  border-radius: 14px;
   padding: 30px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 .card h3 {
+  font-size: 20px;
   margin-bottom: 15px;
-  font-size: 22px;
 }
 
 .card ul {
-  margin-bottom: 20px;
+  list-style: disc;
+  padding-left: 18px;
+  margin-bottom: 15px;
 }
 
-.card ul li {
+.card li {
   margin-bottom: 8px;
 }
 
 .price {
   font-weight: bold;
-  color: #1e3c72;
+  color: #e74c3c;
 }
 
-/* FOOTER */
-footer {
-  background: #1e3c72;
+.price.red {
+  color: #e74c3c;
+}
+
+/* CTA */
+.cta {
+  background: #2f5566;
   color: #fff;
   text-align: center;
-  padding: 20px;
-  font-size: 14px;
+  padding: 70px 20px;
+}
+
+.cta h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.cta p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  opacity: 0.95;
+}
+
+.btn {
+  display: inline-block;
+  background: #2ecc71;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #27ae60;
 }
